@@ -1,9 +1,7 @@
-var h = document.getElementsByClassName("hamburger-menu");
-
-$('.header-right > a i').click(
+$('.header-right > a').click(
 
     function() {
-        h.style.display = "block";
+        $('.hamburger-menu').css("display", 'block');
     }
 
 );
@@ -11,7 +9,7 @@ $('.header-right > a i').click(
 $('.hamburger-menu .close').click(
 
     function () {
-        h.style.display = "none";
+        $(".hamburger-menu").attr('style','display: none');
     }
 
 );
